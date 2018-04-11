@@ -4,11 +4,14 @@
   </head>
   <body>
     <a-scene>
-      <a-sky color="#ECECEC"></a-sky>
+      
+    <a-light type="ambient" color="#445451"></a-light>
+  <a-light type="point" intensity="1.5" position="2 4 4"></a-light>
+      
       <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/wizard_tower_animated/scene.gltf" scale="0.15 0.15 0.15" position="-0.6 1.5 -2.2">
-        <a-animation attribute="position" to="3 2 -3" direction="alternate" dur="2000"
+        <a-animation attribute="position" to="3 2 -3" direction="alternate" dur="2500"
           repeat="indefinite"></a-animation>
-        <a-animation attribute="rotation" begin="click" dur="2000" to="30 405 45"></a-animation>
+        <a-animation attribute="rotation" begin="click" dur="2500" to="30 405 50"></a-animation>
       </a-gltf-model>
       
      
@@ -16,8 +19,8 @@
 
       <a-sound src="https://ucarecdn.com/549144dc-855e-40d5-abd3-9e4337197e1c/" autoplay="true" position="-3 1 -4"></a-sound>
 
-
-        
+ <a-sky color="#FFC125" opacity="0.6"></a-sky>
+ 
       
     </a-scene>
   </body>
