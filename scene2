@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aincraft</title>
+    <meta name="description" content="Aincraft">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-teleport-controls@0.2.x/dist/aframe-teleport-controls.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-controller-cursor-component@0.2.x/dist/aframe-controller-cursor-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/random-color.js"></script>
+    <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/snap.js"></script>
+    <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/intersection-spawn.js"></script>
+  </head>
+  <body>
+    <a-scene avatar-recorder>
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity=".8" position="19.04 10.24 -8.38"></a-light>
+      
+      
+      <a-text value="Please take a seat. Performance is about to start." color="black" position="-2 4 -5" scale="1 1 1"></a-text>
+      
+      
+      
+      <a-sphere color="white" position="0.02 2 2.8" rotation="0 0 0" scale="1 1 1">
+
+
+
+        <a-animation attribute= "scale" begin= "mouseenter" dur = "600" to= "0 0 0"></a-animation>
+        <a-animation attribute= "scale" begin= "mouseleave" dur = "600" to= "1 1 1"></a-animation>
+        
+      </a-sphere>
+      
+      
+      
+      
+      
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/nightclub_stage/scene.gltf" scale="0.05 0.05 0.05" position="-10 1.3 -2"></a-gltf-model>
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="-1.25 1.3 -1.50"></a-gltf-model>
+
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="-0.66 1.3 -1.5"></a-gltf-model>
+
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="-0.22 1.3 -1.5"></a-gltf-model>
+
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="0.30 1.3 -1.5"> </a-gltf-model>
+
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="0.86 1.3 -1.5"></a-gltf-model>
+
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="1.42 1.3 -1.5"></a-gltf-model>
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="-1.5 1.3 -2"><a-animation attribute="position" to="-1.5 1.5 -2" direction="alternate" dur="2000" repeat="indefinite"></a-animation></a-gltf-model>
+
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="-1 1.3 -2"><a-animation attribute="position" to="-1 1.5 -2" direction="alternate" dur="2000" repeat="indefinite"></a-animation></a-gltf-model>
+
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="-0.5 1.3 -2"><a-animation attribute="position" to="-0.5 1.5 -2" direction="alternate" dur="2000" repeat="indefinite"></a-animation></a-gltf-model>
+     
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="0 1.3 -2"><a-animation attribute="position" to="0 1.5 -2" direction="alternate" dur="2000" repeat="indefinite"></a-animation> </a-gltf-model>
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="0.5 1.3 -2"><a-animation attribute="position" to="0.5 1.5 -2" direction="alternate" dur="2000" repeat="indefinite"></a-animation></a-gltf-model>
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="1 1.3 -2"><a-animation attribute="position" to="1 1.5 -2" direction="alternate" dur="2000" repeat="indefinite"></a-animation></a-gltf-model>
+        
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="1.5 1.3 -2"><a-animation attribute="position" to="1.5 1.5 -2" direction="alternate" dur="2000" repeat="indefinite"></a-animation></a-gltf-model>
+      
+      
+<!--      stage-->
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/sl_stage/scene.gltf" scale="0.0008 0.0008 0.0008" rotation="0 -179" position="0.02 1.32 2.8"></a-gltf-model>
+      
+<!--      props-->
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/stage_light/scene.gltf" scale="0.08 0.08 0.08" rotation="0 50" position="-1.72 1.40 0.38"></a-gltf-model>
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/backstage_case/scene.gltf" scale="0.002 0.0018 0.002" rotation="0 275" position="3.80 1.04 0.34"></a-gltf-model>
+      
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/stage_wedge_game_asset/scene.gltf" scale="0.015 0.015 0.015" position="4.22 1.06 3.04" rotation="0 270"></a-gltf-model>
+      
+      
+<!--      Snacks-->
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/champagne/scene.gltf" scale="0.03 0.025 0.03" position="-0.26 1.52 -1.64"></a-gltf-model>
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/champagne/scene.gltf" scale="0.025 0.025 0.025" position="0.84 1.52 -1.58"></a-gltf-model>
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/popcorn/scene.gltf" scale="0.0075 0.0055 0.0075" position="0.06 1.26 -1.58"></a-gltf-model>
+      
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/popcorn/scene.gltf" scale="0.0075 0.0055 0.0075" position="-1.92 1.24 -1.88"></a-gltf-model>
+      
+<!--      Wooden Floor-->
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/wooden_floor_-_blacksmiths_workshop_assets/scene.gltf" scale="7 0.5 12" position="1 1 -4">
+      </a-gltf-model>
+      
+<!--      House-->
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/sm_door/scene.gltf" scale="0.1 0.1 0.1" position="2 1.3 -2">
+      </a-gltf-model>
+      
+      
+      <a-assets>
+       
+
+       
+
+
+        <a-asset-item id="myModelObj" src="https://ucarecdn.com/722a92c9-3e10-428e-8374-c319001116fa/"></a-asset-item>
+        <a-asset-item id="myModelMtl" src="https://ucarecdn.com/0c62f8fb-50ca-4bc2-9356-1234e20e0487/"></a-asset-item>
+
+  
+
+      </a-assets>
+
+      <!-- Hands. -->
+
+      
+      <a-entity environment="preset: checkerboard; fog: 0.9; skyType: gradient;  skycolor: #faff78; horizonColor: #faff78; groundTexture: none; numDressing: 100" position = "0 0 0">
+      <!-- Camera. -->
+      <a-camera>
+        <a-cursor intersection-spawn="event: click; mixin: voxel"
+                  ></a-cursor>
+      </a-camera>
+     
+
+        <a-sound src="https://ucarecdn.com/8c1dce55-c7e7-4e6b-96cf-e693aff9cbb2/" volume="4" autoplay="true" position="-3 1 -4"></a-sound>
+
+    </a-scene>
+  </body>
+</html>
