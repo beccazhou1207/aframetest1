@@ -1,27 +1,76 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
+ 
+      
+      
+      
+  
     <a-scene>
       
-    <a-light type="ambient" color="#445451"></a-light>
-  <a-light type="point" intensity="1.5" position="2 4 4"></a-light>
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity=".6" position="19.04 10.24 -8.38"></a-light>
+
+      <a-text value="A Night in Zhou Moving Theater" color="white" position="-2 5.5 -5" scale="2 2 2"></a-text>
       
-      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/wizard_tower_animated/scene.gltf" scale="0.15 0.15 0.15" position="-0.6 1.5 -2.2">
-        <a-animation attribute="position" to="3 2 -3" direction="alternate" dur="2500"
-          repeat="indefinite"></a-animation>
+      <a-text value="Take a seat. The line is long!" color="white" position="-2 1 -0.7" rotation="0 70" color="yellow" scale="0.5 .5 .5"></a-text>
+
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/concrete_modular_sculpture/scene.gltf" scale="0.06 0.04 .06" position="0 1 -3">
+        <a-animation attribute="position" to="-2 1 -3" direction="alternate" dur="2500"
+                     repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" begin="click" dur="2500" to="30 405 50"></a-animation>
+      </a-gltf-model>
+
+      <a-gltf-model 
+                    src="https://beccazhou1207.github.io/aframetest1/assets/park_bench/scene.gltf" scale="0.00035 0.00035 0.00035" position="-3 1 -2" rotation="0 -100">
+      </a-gltf-model>
+      
+      <a-gltf-model 
+                    src="https://beccazhou1207.github.io/aframetest1/assets/saloon_-_piano/scene.gltf" scale="0.008 0.008 0.008" position="4 0.8 0.4" rotation="0 -100">
+      </a-gltf-model>
+      
+
+      <a-gltf-model 
+                    src="https://beccazhou1207.github.io/aframetest1/assets/secret_7_entry_-_sculpture/scene.gltf" scale="0.05 0.05 0.05" position="-2 1 3" rotation="0 -260">
+        <a-animation attribute="a-gltf-model.rotation" to="0 -60" direction="alternate" dur="2500"
+                     repeat="indefinite"></a-animation>
         <a-animation attribute="rotation" begin="click" dur="2500" to="30 405 50"></a-animation>
       </a-gltf-model>
       
-     
-      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/siege_camp_scene/scene.gltf" scale="0.05 0.05 0.05" position="0 1.2 -2"></a-gltf-model>
-
-      <a-sound src="https://ucarecdn.com/549144dc-855e-40d5-abd3-9e4337197e1c/" autoplay="true" position="-3 1 -4"></a-sound>
-
- <a-sky color="#FFC125" opacity="0.6"></a-sky>
- 
       
+<!--
+      <a-gltf-model src="https://beccazhou1207.github.io/aframetest1/assets/theater_chair/scene.gltf" scale="0.1 0.1 0.1" position="0.5 1.3 -2">
+        <a-animation attribute="position" to="3 2 -3" direction="alternate" dur="2500"
+                     repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" begin="click" dur="2500" to="30 405 50"></a-animation>
+      </a-gltf-model>
+-->
+
+      </a-entity>
+      
+      
+      
+    <a-entity environment="preset: goldmine; fog: 0.6; skyType: gradient;  skycolor: #faff78; horizonColor: #faff78; groundTexture: none; numDressing: 700" position = "0 0 0">
+      
+        
+      
+      </a-entity>
+      
+      
+      
+
+
+
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+    
+    <a-sound src="" volume="7" autoplay="true" position="-3 1 -4"></a-sound>
+    
     </a-scene>
+
   </body>
 </html>
